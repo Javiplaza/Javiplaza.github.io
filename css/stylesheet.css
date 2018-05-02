@@ -9,6 +9,57 @@ body {
     width: inherit;
     height: inherit;
     overflow-x: hidden; /*overflow= pour que le navigateur sache qu'il doit cacher ce qui dépasse de la fenêtre*/
-    font-family: 'futura';
+    font-family: 'futura', 'trebuchet', sans-serif; /*font-family= La propriété font-family sert à indiquer la liste prioritaire des polices à utiliser pour l'affichage d'un élément donné ou d'une page Web.*/
     font-weight: 100;
+}
+
+h1 {
+    color: #000000;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Monotype Baskerville';
+	}
+
+h2 {
+    color: #000000;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'futura';
+}
+
+h3 {
+    color: #000000;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'futura';
+}
+
+h4 {
+    color: #000000;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'futura';
+}
+
+p {
+    text-indent: 30px; /*La propriété text-indent permet d'ajouter une touche d'élégance aux paragraphes de texte en appliquant une indentation à la première ligne du paragraphe.*/
+    text-align: justify; /* pour que le texte soit justifié à droite et à gauche*/
+    color: #000000;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'futura';
+}
+
+th {
+		text-align: center;
+}
+
+td {
+		text-align: center;
 }
