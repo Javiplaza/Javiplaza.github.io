@@ -8,7 +8,7 @@
         <meta name="author" content="Javiera Plaza">
         
         <title>Javiera Plaza</title> <!--titre = nom de l'onglet sur Safari-->
-        <link href="css/boostrap.min.css" rel="stylesheet"/> <!--link= interpretation du moteur de recherche = remplacement de cette balise par CSS
+        <link href="css/bootstrap.min.css" rel="stylesheet"/> <!--link= interpretation du moteur de recherche = remplacement de cette balise par CSS
                                                 boostrap= workframe= divisions en 12 colones-->
         <link href="css/stylesheet.css" rel="stylesheet"/> <!-- stylesheet= CSS crée par moi-->
         
@@ -20,19 +20,35 @@
         
         <!-- nav= liens principaux de navigation
         id= permet d'indentifier la balise-->
-        <nav id="id_main_nav"> 
-            <ul> <!--ul = balise liste à puce non numérotée-->
-                <li><!--il = balise élément de liste à puce-->
+       <!-- <nav id="id_main_nav" class="main_nav"> 
+            <ul> <!--ul = balise liste à puce non numérotée
+                <li><!--il = balise élément de liste à puce
                     <!--a= lien
                     href= destination du lien interne-externe-lien vers une partie de la même page
-                    argument#= auto-lien--> 
+                    argument#= auto-lien
                     <a href="#">Accueil</a>
                 </li>
-                <li><!--il = balise élément de liste-->
-                    <a href="#">Théâtre</a><!--a= lien-->
+                <li><!--il = balise élément de liste
+                    <a href="#">Théâtre</a><!--a= lien
                 </li>
             </ul>
-        </nav>
+        </nav>-->
+        
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-light main_nav"> <!-- framework bootstrap il y a plusieurs tailles (sm,md,lg) navbar-expand-sm. Ensuite, navbar-dark ou navbar-light sont possibles. Si je veux que la barre soit a droite, il faut l'indiquer avec un navbar-right, sinon elle va par défaut au gauche. Fixed-top si je veux que la barre reste visible-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!--Navbar toggle-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto"> <!--mr-auto veut dire que le bouton va automatiquement aller a droite-->
+                    <li id="home-nav" class="nav-item active"> <!-- nav-item = item de navigation / active = bouton actif pour l'instant, il devient donc plus épais-->
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li id="theatre-nav" class="nav-item scrolling-btn" data-id="#theatre-nav-top">
+                        <a class="nav-link" href="#theatre-top">Théâtre</a>
+                    </li>
+                </ul> <!--Navlinks-->
+            </div> <!--Navbar Collapse-->
+        </nav> <!--Navbar-->
         
         <div id="id_cover" class="cover"> <!--class= nom de la classe/style CSS à utiliser plus tard-->
             <h1>Javiera <strong>Plaza</strong></h1>
@@ -153,25 +169,27 @@
         
         <div id="id_langues" class="section frame">
             <h1>Langues</h1>
-            <h2>C2</h2>
-            <lu>Espagnol</lu>
-            <lu>Français</lu>
-
-            <h2>C1</h2>
-            <lu>Allemand</lu>
-            
-            <h2>B2</h2>
-            <lu>Anglais</lu>
-            
-            <h2>A2</h2>
-            <lu>Italien</lu>
+            <table>
+                <tr border="1">
+                    <td><h2>C2</h2></td>
+                    <td><h2>C1</h2></td>
+                    <td><h2>B2</h2></td>
+                    <td><h2>A2</h2></td>
+                </tr>
+                <tr>
+                    <td>Espagnol<p>Français</p></td>
+                    <td>Allemand</td>
+                    <td>Anglais</td>
+                    <td>Italien</td>
+                </tr>
+	       </table>
         </div><!--id_langues-->
         
         <div id="id_contact" class="section frame">
             <h1>Contactez-moi</h1>
             <p>Javiera Plaza</p><p>Rue Aimé Steinlen 3</p><p>1800 Vevey</p>
-            <a href="mailto:jplaza.b@hotmail.com"></a>
-            <p>jplaza.b@hotmail.com</p><p>Tel: +41 79 898 45 55</p>
+            <a href="mailto:jplaza.b@hotmail.com">jplaza.b@hotmail.com</a>
+            <p>Tel: +41 79 898 45 55</p>
         </div><!--id_contact-->
         
         <hr> <!--hr= separateur-->
