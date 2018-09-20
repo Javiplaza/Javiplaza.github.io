@@ -1,51 +1,59 @@
+
 html {
     width: 100%;
     height: 100%;
 }
-
+/* Apparence générale du site*/
 body {
-    background-color: rgb(249, 235, 234);
-    color:#000000;
+    background-color: rgb(208, 236, 231);
+    color:#000000;/* couleur du texte*/
     width: inherit;
     height: inherit;
     overflow-x: hidden; /*overflow= pour que le navigateur sache qu'il doit cacher ce qui dépasse de la fenêtre*/
     font-family: 'futura', 'trebuchet', sans-serif; /*font-family= La propriété font-family sert à indiquer la liste prioritaire des polices à utiliser pour l'affichage d'un élément donné ou d'une page Web.*/
     font-weight: 100;
+    text-align: center
 }
 
+/* Apparence des grands titres*/
 h1 {
-    color: #000000;
     font-style: italic;
     font-variant: small-caps;
     font-weight: 900;
     font-size: 30px;
     font-family: 'Monotype Baskerville';
+    text-align: center
 	}
 
+/* Apparence des sous-titres*/
 h2 {
-    color: #000000;
-    font-style: italic;
+    font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'futura';
+    text-align: center;
+    text-decoration: underline;
 }
 
+/* Apparence des troisièmes tritres*/
 h3 {
-    color: #000000;
     font-style: normal;
     font-weight: 100;
     font-size: 15px;
     font-family: 'futura';
+    text-align: center
 }
 
+/* Apparence des quatrièmes titres*/
 h4 {
-    color: #000000;
     font-style: normal;
     font-weight: 100;
     font-size: 15px;
     font-family: 'futura';
+    text-align: center
 }
 
+/* Apparence des paragraphes*/
 p {
     text-indent: 30px; /*La propriété text-indent permet d'ajouter une touche d'élégance aux paragraphes de texte en appliquant une indentation à la première ligne du paragraphe.*/
     text-align: justify; /* pour que le texte soit justifié à droite et à gauche*/
@@ -54,14 +62,31 @@ p {
     font-weight: 100;
     font-size: 15px;
     font-family: 'futura';
+    text-align: center;
+    margin: auto
+    
 }
 
+.section_frame {
+    border: 5px solid rgb(253, 237, 236);
+}
+
+/* Apparence des paragraphes*/
 th {
 		text-align: center;
 }
 
 td {
 		text-align: center;
+}
+
+.button {
+    border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:rgb(253, 237, 236);
+	font:bold 13px Arial;
+	color:#fff;
 }
 
 .main_nav { /*class inventée par moi-même doit commencer avec un point (.)... attention il ne faut pas oublier de communiquer à HTML de cette nouvelle class. Il faut applique une class a la balise cible*/
@@ -71,3 +96,29 @@ td {
 .main_nav a /* a = lien */ {
     text-decoration: underline;
 }
+
+.navbar{
+    background-color: rgb(253, 237, 236)
+}
+
+.cover{
+    background-color: rgb(253, 237, 236)
+}
+.cover .titre .prenom {
+    
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Monotype Baskerville';
+    text-align: left
+}
+
+.cover .sous_titre{
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 15px;
+    font-family: 'futura';
+    text-align: left
+}
+

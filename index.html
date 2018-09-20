@@ -15,11 +15,8 @@
     </head>
     
     <body> <!--body = corps/structure du site-->
-        
-        <div><!--il faudra mettre la couleur rose--></div>
-        
         <!-- nav= liens principaux de navigation
-        id= permet d'indentifier la balise-->
+        id= permet d'indentifier la balise, celle-ci se doit d'être unique-->
        <!-- <nav id="id_main_nav" class="main_nav"> 
             <ul> <!--ul = balise liste à puce non numérotée
                 <li><!--il = balise élément de liste à puce
@@ -50,124 +47,184 @@
             </div> <!--Navbar Collapse-->
         </nav> <!--Navbar-->
         
+        <!--Créer la barre de navigation laterale (avec JavaScript?)-->
+        
         <div id="id_cover" class="cover"> <!--class= nom de la classe/style CSS à utiliser plus tard-->
-            <h1>Javiera <strong>Plaza</strong></h1>
-            <p><i>Master ès Lettres et Linguistique</i></p>
-            <p><i>avec études supplémentaires en communication et médias</i></p> <!--br= balise à ne pas ultiser pour sauter les lignes, faut créer plutôt un nouveau paragraphe-->
+            <div class="titre">
+                <h1 class="prenom">Javiera Plaza</h1>
+            </div>
+            <p class="sous_titre">Master ès Lettres et Linguistique</p>
+            <p class="sous_titre">avec études supplémentaires en communication</p>
+            <p class="sous_titre">et médias</p><!--br= balise à ne pas ultiser pour sauter les lignes, faut créer plutôt un nouveau paragraphe-->
             <img src="images/Photo_CV_site.jpg" alt="photo portrait de Javiera Plaza"/>
         </div> <!--id_cover-->
         
         <div><!--il faudra mettre la couleur verte--></div>
         
         <div id="id_a_propos" class="section">
+            <br>
             <h1>À propos de moi</h1>
-            <p>Depuis mon plus jeune âge, je me suis vue confrontée à des changements. 
-            Le premier intervint à l’âge de deux mois lorsque je suis partie de mon pays natal, les Etats-Unis,
-            vers mon pays « culturel », le Chili. Ensuite, ma vie a été une succession de changements sans fin :
-            et oui, je peux le dire, j’ai vécu presque toute ma vie entre les cartons.</p>
-            <p>L’aventure a réellement commencé aux Pays-Bas. Je me suis plus tard installée au Venezuela,
-            un pays qui recelait de surprises et nous a obligés, ma famille et moi, à prendre des habitudes plutôt étranges comme
-            le fait de jouer à cache-cache avec de méchants scorpions qui attendaient au fond de nos chaussures.</p>
-            <p>Je suis ensuite retournée au Chili, avant d’emménager quelques années plus tard dans un pays entouré de montagnes :
-            la Suisse. Cette destination nous a appris beaucoup de choses dont la langue française et surtout la ponctualité.
-            Depuis, j’avoue avoir développé une espèce de phobie des gens qui arrivent en retard aux rendez-vous. Chaque pays et
-            culture ont laissé une petite trace dans notre façon de voir le monde.</p>
-            <p>Quelques années plus tard, alors que j’avais perdu l’habitude de vivre entre les cartons de déménagement, mes parents
-            nous ont annoncé qu’on allait devoir quitter le paradis du chocolat pour retourner à nouveau au Chili. Quitter la Suisse
-            signifiait plein de choses négatives, et surtout recommencer à zéro. Ce chiffre me faisait vraiment peur et il m’est tombé
-            dessus alors que je n’avais rien fait pour le mériter. Avec le temps, je me suis habituée et j’ai commencé à adorer cet
-            incroyablement long pays qu’est le Chili.</p>
-            <p>Les cartons ont une fois de plus fait leur apparition dans notre maison et nous sommes repartis en Allemagne. J’ai fini
-            le gymnase à Hambourg et je voulais commencer des études ; c’est ainsi que je suis retournée dans ce superbe pays qu’est la
-            Suisse…et comme j’aime le chocolat, Fribourg était l’endroit idéal où m’installer.</p>
-            <p>Après cinq ans d’enrichissement intellectuel, l’amour m’a invité à changer une fois pour toutes de nid. C’est ainsi que
-            je me retrouve aujourd’hui dans l’une des « perles de la Riviera Suisse », à Vevey, ville où je profite de chaque
-            merveilleux coin qu'elle m'offre.</p>
+            <br>
+            <p>Depuis mon plus jeune âge, je me suis vue confrontée à des changements. Le premier</p> 
+            <p>intervint à l’âge de deux mois lorsque je suis partie de mon pays natal, les Etats-Unis,</p> 
+            <p>vers mon pays « culturel », le Chili. Ensuite, ma vie a été une succession de</p> 
+            <p>changements sans fin : et oui, je peux le dire, j’ai vécu presque toute ma vie entre les</p>
+            <p>cartons.</p>
+            <br>
+            <p>L’aventure a réellement commencé aux Pays-Bas. Je me suis plus tard installée</p> 
+            <p>au Venezuela, un pays qui recelait de surprises et nous a obligés, ma famille et moi, à</p> 
+            <p>prendre des habitudes plutôt étranges comme le fait de jouer à cache-cache avec de</p>
+            <p>méchants scorpions qui attendaient au fond de nos chaussures.</p>
+            <br>
+            <p>Je suis ensuite retournée au Chili, avant d’emménager quelques années plus tard dans</p> 
+            <p>un pays entouré de montagnes : la Suisse. Cette destination nous a appris beaucoup</p> 
+            <p>de choses dont la langue française et surtout la ponctualité. Depuis, j’avoue avoir</p> 
+            <p>développé une espèce de phobie des gens qui arrivent en retard aux rendez-vous.</p>
+            <p>Chaque pays et culture ont laissé une petite trace dans notre façon de voir le monde.</p>
+            <br>
+            <p>Quelques années plus tard, alors que j’avais perdu l’habitude de vivre entre les</p> 
+            <p>cartons de déménagement, mes parents nous ont annoncé qu’on allait devoir quitter le</p> 
+            <p>paradis du chocolat pour retourner à nouveau au Chili. Quitter la Suisse signifiait</p>
+            <p>plein de choses négatives, et surtout recommencer à zéro. Ce chiffre me faisait</p>
+            <p>vraiment peur et il m’est tombé dessus alors que je n’avais rien fait pour le mériter.</p>
+            <p>Avec le temps, je me suis habituée et j’ai commencé à adorer cet incroyablement long</p>
+            <p>pays qu’est le Chili.</p>
+            <br>
+            <p>Les cartons ont une fois de plus fait leur apparition dans notre maison et nous sommes</p> 
+            <p>repartis en Allemagne. J’ai fini le gymnase à Hambourg et je voulais commencer des</p>
+            <p>études; c’est ainsi que je suis retournée dans ce superbe pays qu’est la Suisse… et</p>
+            <p>et comme j’aime le chocolat, Fribourg était l’endroit idéal où m’installer.</p>
+            <br>
+            <p>Après cinq ans d’enrichissement intellectuel, l’amour m’a invité à changer une fois</p> 
+            <p>pour toutes de nid. C’est ainsi que je me retrouve aujourd’hui dans l’une des « perles</p> 
+            <p>de la Riviera Suisse », à Vevey, ville où je profite de chaquemerveilleux coin qu'elle</p>
+            <p> m'offre.</p>
+            <br>
         </div><!--id_a_propos-->
         
-        <hr> <!--hr= separateur-->
+        <hr> <!--hr= ligne séparatrice-->
         
-        <div id="id_jobs" class="section frame">
+        <div id="id_jobs" class="section_frame">
+            <br>
             <h1>Parcours professionnel</h1>
+            <br>
             <h2>Promotrice chez ASBI Sàrl</h2>
             <h3>2015 - 2017</h3>
-            <p>Dans le cadre de mon emploi de promotrice,j’ai été amenée à conseiller et répondre aux besoins d’une clientèle très variée. J’ai fait preuve de diplomatie, même dans les situations de forte affluence (comme la période de fin d’année). Mes supérieurs ont été contents de mes résultats de vente et de mon contact avec la clientèle.</p>
-        
+            <p>Dans le cadre de mon emploi de promotrice,j’ai été amenée à </p>
+            <p>conseiller et répondre aux besoins d’une clientèle très variée. J’ai</p>
+            <p>fait preuve de diplomatie, même dans les situations de forte</p>
+            <p>affluence (comme la période de fin d’année). Mes supérieurs ont</p>
+            <p>été contents de mes résultats de vente et de mon contact avec la</p>
+            <p>clientèle.</p>
+            <br>
             <h2>Trésorière et membre actif dans le Comité d'Espagnol de l'UNIFR</h2>
             <h3>2015 - 2017</h3>
-            <p>En ayant été membre du Comité d’Espagnol de l’Université, j’ai été amenée à planifier et gérer des évènements, ainsi qu’à évaluer des options et choisir la meilleure d’entre elles. J’ai aussi dû établir des priorités, respecter des délais et travailler en équipe. Mon rôle de trésorière m’a permis d’apprendre à estimer et à gérer un budget.</p>
-            
+            <p>En ayant été membre du Comité d’Espagnol de l’Université, j’ai</p>
+            <p>été amenée à planifier et gérer des évènements, ainsi qu’à</p>
+            <p>évaluer des options et choisir la meilleure d’entre elles. J’ai aussi</p>
+            <p>dû établir des priorités, respecter des délais et travailler en</p>
+            <p>équipe. Mon rôle de trésorière m’a permis d’apprendre à estimer</p>
+            <p>et à gérer un budget.</p>
+            <br>
             <h2>Professeur particulier d'espagnol</h2>
             <h3>2014 - 2015</h3>
-            <p>Cette activité m’a permis d’apprendre à évaluer les niveaux de langue de mes élèves pour ensuite planifier et préparer un matériel pour des cours adaptés à leurs besoins.</p>
+            <p>Cette activité m’a permis d’apprendre à évaluer les niveaux de</p>
+            <p>langue de mes élèves pour ensuite planifier et préparer un</p>
+            <p>matériel pour des cours adaptés à leurs besoins.</p>
         </div><!--id_jobs-->
         
         <hr> <!--hr= separateur-->
         
-        <div id="id_formation" class="section frame">
+        <div id="id_formation" class="section_frame">
+            <br>
             <h1>Formation</h1>
+            <br>
             <h2>Master Of Arts en Espagnol avec études optionnelles :Communications et Médias</h2>
             <h3>Université de Fribourg</h3>
             <h4>2015 - 2017</h4>
-            <p>Mémoire : Étude empirique réalisée dans la discipline de la linguistique espagnole: El español en contacto con el francés: caso suizo. Ce travail de recherche m’a appris à diriger des interviews et à obtenir des informations clés au travers d’une discussion relativement courte.</p>
-            
+            <br>
+            <p>Mémoire : Étude empirique réalisée dans la discipline</p>
+            <p>de la linguistique espagnole: El español en contacto con el francés:</p>
+            <p>caso suizo. Ce travail de recherche m’a appris à diriger des interviews</p>
+            <p>et à obtenir des informations clés au travers d’une discussion</p>
+            <p>relativement courte.</p>
+            <br>
             <h2>Bachelor Of Arts en Espagnol et Deutsch als Fremdsprache</h2>
             <h3>Université de Fribourg</h3>
             <h4>2012 - 2015</h4>
-            
+            <br>
             <h2>Baccalauréat L</h2>
             <h3>Lyçée Français de Hambourg</h3>
             <h4>2009 - 2011</h4>
+            <br>
         </div><!--id_formation-->
         
         <hr> <!--hr= separateur-->
         
-        <div id="id_memoire" class="section frame">
+        <div id="id_memoire" class="section_frame">
+            <br>
             <button href="#">Voir mon mémoire de Master</button>
+            <br>
         </div><!--id_memoire-->
         
         <hr> <!--hr= separateur-->
         
-        <div id="id_competences" class="section frame">
+        <div id="id_competences" class="section_frame"> <!--diviser en trois grace à JavScript?-->
+            <br>
             <h1>Compétences</h1>
+            <br>
             <h2>Personnelles</h2>
             <ol>Contact facile</ol>
             <ol>Bonne rédaction</ol>
             <ol>Bonne gestion du temps</ol>
             <ol>Très flexible</ol>
-            
+            <br>
             <h2>Bureautiques</h2>
             <ol>Word</ol>
             <ol>Power Point</ol>
             <ol>Excel</ol>
             <ol>Outlook</ol>
-            
+            <br>
             <h2>Informatiques: en cours d'apprentissage</h2>
             <ol>HTML</ol>
             <ol>CSS</ol>
             <ol>JavaScript</ol>
+            <br>
         </div><!--id_competences-->
         
         <hr> <!--hr= separateur-->
         
         <div id="id_interets" class="section">
+            <br>
             <h1>Centres d'intérêts</h1>
+            <br>
             <button href="#">Voyages et cultures</button> 
-            <p>J’ai eu l’occasion de voyager dans pratiquement tous les continents et de vivre en Allemagne, au Chili, aux États-Unis, aux Pays-Bas, en Suisse et au Venezuela. Ceci m’a permis d’apprendre à connaître une grande variété de cultures et de langues.</p>
-
+            <br>
+            <p>J’ai eu l’occasion de voyager dans pratiquement tous les continents</p>
+            <p>et de vivre en Allemagne, au Chili, aux États-Unis, aux Pays-Bas, en</p>
+            <p>Suisse et au Venezuela. Ceci m’a permis d’apprendre à connaître</p>
+            <p>une grande variété de cultures et de langues.</p>
+            <br>
             <button href="#">Théâtre</button>
-            <p>J’aime beaucoup le théâtre. J’ai notamment pu participer en tant qu’actrice amateure dans trois pièces différentes dont deux en Allemagne et une en Suisse.</p>
-
+            <br>
+            <p>J’aime beaucoup le théâtre. J’ai notamment pu participer en tant</p>
+            <p>qu’actrice amateure dans trois pièces différentes dont deux en</p>
+            <p>Allemagne et une en Suisse.</p>
+            <br>
             <button href="#">Sports</button>
-            <p>J’aime le fitness et les sports qui me permettent d’être à l’extérieur ainsi que de dépenser mon énergie.</p>
-
+            <br>
+            <p>J’aime le fitness et les sports qui me permettent d’être à l’extérieur</p>
+            <p>ainsi que de dépenser mon énergie.</p>
+            <br>
             <button href="#">Lecture</button>
-            <p>J'adore la lecture. Cette activité me permet de retrouver mon calme et de travailler mon imagination.</p>
+            <br>
+            <p>J'adore la lecture. Cette activité me permet de retrouver mon</p>
+            <p>calme et de travailler mon imagination.</p>
         </div><!--id_interets-->
         
         <hr> <!--hr= separateur-->
         
-        <div id="id_langues" class="section frame">
+        <div id="id_langues" class="section_frame"> <!--de nouveau même problème des blocs!-->
             <h1>Langues</h1>
             <table>
                 <tr border="1">
@@ -185,7 +242,7 @@
 	       </table>
         </div><!--id_langues-->
         
-        <div id="id_contact" class="section frame">
+        <div id="id_contact" class="section_frame">
             <h1>Contactez-moi</h1>
             <p>Javiera Plaza</p><p>Rue Aimé Steinlen 3</p><p>1800 Vevey</p>
             <a href="mailto:jplaza.b@hotmail.com">jplaza.b@hotmail.com</a>
